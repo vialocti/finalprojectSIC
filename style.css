@@ -1,4 +1,22 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+    color:white;
+    font-family: arial;
+}
+h1{
+    font-family: verdana;
+    font-weight: bold;
+    color:grey;
 
+}
+
+.maindiv{
+    color: black;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+}
+.secdiv{
+    margin-left: 20px;
+}
 
