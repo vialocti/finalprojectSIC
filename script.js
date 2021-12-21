@@ -10,4 +10,13 @@ function compute()
     document.getElementById("result").innerHTML="Si deposito dolares recibio <mark>" + interest +"</mark> <br/> year";
     
 }
+
+function updateRate(){
+    var rate= document.getElementById("rate").value;
+    document.getElementById("rate_value").innerText=rate;
+}
+
+function loadpage(){
+    document.getElementById("rate").value="10.5"
+}
         

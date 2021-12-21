@@ -4,6 +4,7 @@ body {
     font-family: arial;
 }
 h1{
+    margin-left: 10%;
     font-family: verdana;
     font-weight: bold;
     color:grey;
@@ -14,9 +15,16 @@ h1{
     color: black;
     background-color: white;
     width: 50%;
+    border-radius: 25px;
     margin: auto;
 }
 .secdiv{
     margin-left: 20px;
 }
 
+nput[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
