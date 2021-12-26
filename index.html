@@ -1,43 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Simple Interest Calculator</title>
-    </head>
-    <body onload="loadpage()">
-
-        <div class="maindiv">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilos.css"> 
+    <title>simple interest calculator</title>
+</head>
+<body onload="loadpage()">
+    <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
-            <div class="secdiv">
-                Amount <input type="number"  id="principal" min="1"> <br/> <br/>
-                Rate <input type="range"  id="rate"  min="1" max="20" step="0.25" onchange="updateRate()"> <span id="rate_value">10.5</span>% <br/> <br/>
-                No. of Years <select id="years">
+        <br/>
+        <br/>
+        <div id="secondarydiv">
+            Amount <input type="number" id="principal" name="principal" value=1>
+            <br/><br/>
+            Rate<input type="range" id="rate" name="rate" value="10.25" min="1" max="20" step="0.25" onchange="updateRange()"> 
+            <span id="rate_value">10.25</span>%
+            <br/><br/>
+            No. of Years
+            <select  id="years" name="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                
+            </select>
+            <br/><br/>
+            <button id="calculdor" onclick="calcular()">Calculator Interest</button>
+            <br/> <br/>
+            
+            <span id="result">
 
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-
-                            </select>
-                    <br/><br>
-               
-            </div>
-
-        <button onclick="compute()">Compute Interest</button>
-        <br/><br/> 
-        <span id="result"></span><br>
+            </span>
+        </div>
         <br/>
         <footer>
-            &#169; Grated
+            &#169; This Calculator belongs to Alfredo Brizuela
         </footer>
-    </div>     
 
-    </body>
+
+
+    </div>
+    
+</body>
 </html>
